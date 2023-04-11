@@ -1,0 +1,202 @@
+@font-face {
+	font-family: "Droid Serif";
+	src: local("Droid Serif"), local("Droid-Serif"), local("Droid Serif Regular"), local("Droid-Serif-Regular"),
+		url("../font/DroidSerif.woff2") format("woff2"),
+		url("../font/DroidSerif.woff") format("woff");
+	font-weight: 400;
+}
+/*
+@font-face {
+	font-family: "Droid Serif";
+	src: local("Droid Serif Italic"), local("Droid-Serif-Italic"),
+		url("../font/DroidSerif-Italic.woff2") format("woff2"),
+		url("../font/DroidSerif-Italic.woff") format("woff");
+	font-weight: 400;
+}
+*/
+@font-face {
+	font-family: "Droid Serif";
+	src: local("Droid Serif Bold"), local("Droid-Serif-Bold"),
+		url("../font/DroidSerif-Bold.woff2") format("woff2"),
+		url("../font/DroidSerif-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+/*@font-face {
+	font-family: "Droid Serif";
+	src: local("Droid Serif Bold Italic"), local("Droid-Serif-Bold-Italic"),
+		url("../font/DroidSerif-BoldItalic.woff2") format("woff2"),
+		url("../font/DroidSerif-BoldItalic.woff") format("woff");
+	font-weight: 700;
+}*/
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Droid Serif', 'Segoe UI';
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+.main-article {
+	margin-bottom: 150px;
+}
+
+.div-main {
+	padding-left: 200px;
+}
+
+.div-main__title {
+	font-size: 50px;
+}
+
+.div-main__paragraph {
+	max-width: 480px;
+	font-size: 20px;
+	white-space: pre-line;
+}
+
+
+
+.section__title {
+	color: #ff8a00;
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+
+.section {
+	white-space: pre-line;
+}
+
+.section__list {
+	max-width: 500px;
+	margin-left: 200px;
+}
+
+.section__list-title {
+	font-size: 30px;
+}
+
+.section__list-paragraph {
+	font-size: 20px;
+	padding-left: 80px;
+}
+
+.section__list-paragraph_cursive {
+	font-style: italic;
+}
+
+ol {
+	counter-reset: section;
+}
+
+.section__item {
+	max-width: 500px;
+    margin: 0 0 80px 0;
+    display: inline-block;
+    vertical-align: super;
+}
+
+.section__list-title:before {
+	content: counter(section, decimal);
+	margin-right: 50px;
+	counter-increment: section;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #ff8a00;
+}
+
+
+
+.form-section {
+	background-color: #F2F0F1;
+	margin: 0 auto;
+	width: 780px;
+	height: 600px;
+	border-radius: 20px;
+	margin-bottom: 140px;
+}
+
+.form-section__title {
+	font-weight: 700;
+	font-size: 30px;
+	color: #ff8a00;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 30px;
+}
+
+.form-section__text {
+	font-size: 20px;
+	text-align: center;
+}
+
+.form-section__first-text {
+	margin-bottom: 5px;
+}
+
+.form-section__text_orange {
+	color: #ff8a00;
+	margin-bottom: 20px;
+}
+
+.form-section__text_bold {
+	font-weight: 700;
+}
+
+.form-section__phone-text {
+	margin-bottom: 10px;
+}
+
+.form-section__phone-text:before {
+	content: url('../img/phone.svg');
+}
+
+.form-section__mail-text {
+	margin-bottom: 30px;
+}
+
+.form-section__mail-text:before {
+	content: url('../img/mail.svg');
+}
+
+.form-section__last-text {
+	margin-bottom: 30px;
+}
+
+
+
+.form-div {
+	padding-left: 250px;
+}
+
+.form-div__label {
+	display: block;
+	margin-bottom: 35px;
+}
+
+.form-div__input {
+	display: block;
+	border: none;
+	width: 280px;
+	height: 40px;
+}
+
+.form-div__button {
+	background-color: #282626;
+	color: #FF8A00;
+	text-transform: uppercase;
+	width: 220px;
+	height: 40px;
+	margin-left: 30px;
+}
